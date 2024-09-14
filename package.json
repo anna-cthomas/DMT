@@ -8,6 +8,6 @@
 		"express": "^4.21.0"
 	},
 	"scripts": {
-		"start": "concurrently \"tsc -w static/index.ts\" \"node src/app.ts\""
+		"start": "concurrently \"tsc -w\" \"node src/app.ts\""
 	}
 }
