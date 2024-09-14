@@ -1,12 +1,13 @@
 {
-  "devDependencies": {
-    "@types/node": "^22.5.5",
-    "typescript": "^5.6.2"
-  },
-  "dependencies": {
-    "express": "^4.21.0"
-  },
-  "scripts": {
-    "start": "tsc -w static/*.ts & node src/app.ts"
-  }
+	"devDependencies": {
+		"@types/node": "^22.5.5",
+		"concurrently": "^9.0.1",
+		"typescript": "^5.6.2"
+	},
+	"dependencies": {
+		"express": "^4.21.0"
+	},
+	"scripts": {
+		"start": "concurrently \"tsc -w static/index.ts\" \"node src/app.ts\""
+	}
 }
