@@ -8,7 +8,6 @@
 		"express": "^4.21.0"
 	},
 	"scripts": {
-		"clean": "cd static && rm -rf *.js",
-		"start": "concurrently \"tsc -w\" \"node src/app.ts\""
+		"start": "concurrently \"cd static && rm -rf *.js && tsc -w\" \"node src/app.ts\""
 	}
 }
