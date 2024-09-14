@@ -7,6 +7,6 @@
     "express": "^4.21.0"
   },
   "scripts": {
-    "start": "tsc static/*.ts && node src/app.ts"
+    "start": "tsc -w static/*.ts & node src/app.ts"
   }
 }
