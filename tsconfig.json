@@ -1,7 +1,9 @@
 {
 	"compilerOptions": {
-		"module": "commonjs",
-		"removeComments": true
+    "module": "es2022",
+    "target": "es2022",
+		"removeComments": true,
+		"moduleResolution": "node",
 	},
-	"include": ["static/*.ts"]
+	"include": ["static/*.ts", "src/*.ts"]
 }
