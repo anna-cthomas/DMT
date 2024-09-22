@@ -1,4 +1,4 @@
-**FEATURES**
+**FEATURES TODO**
 --
 - Create tweets on a canvas - like drawing on paper.
 - Could implement a basic MS paint and upload media directly drawn in the app
@@ -11,3 +11,6 @@
 - Highlight canvases when a tweet has been edited(?)
 - Have museum theme packs
 - Sponsors display as pixel art on canvases (or theme packs!)
+
+**TODO**
+- Reformat backend to py for twscrape? 
