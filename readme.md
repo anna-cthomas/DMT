@@ -14,3 +14,17 @@
 
 **TODO**
 - Reformat backend to py for twscrape? 
+
+
+########
+1. Run `python3.11 -m venv .venv` 
+   1. `python3.11` is the desired python version
+   2. `-m` says run python script called venv
+   3. Give the argument `.venv`
+   4. Makes virtual environment (a collection of packages) at `.venv` directory
+2. Activate .venv directory `source .venv/bin/activate`
+   1. `source` says run everything at this file and inject it into current command prompt
+   2. Use whatever directory the ve is made in
+3. (One time) Create a `requirements.txt` file
+   1. List all libraries inside
+   2. Run `pip install -r requirements.txt`

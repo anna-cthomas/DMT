@@ -1,5 +1,7 @@
 # Files
-node_modules
 static/*.js
 .env
-*.js
+
+# Directories
+node_modules/
+.venv/
