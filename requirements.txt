@@ -1,3 +1,4 @@
 # Python packages
-flask
+flask[async]
 twscrape
+python-dotenv

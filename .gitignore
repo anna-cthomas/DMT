@@ -1,6 +1,7 @@
 # Files
 static/*.js
 .env
+accounts.db
 
 # Directories
 node_modules/
