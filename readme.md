@@ -12,11 +12,7 @@
 - Have museum theme packs
 - Sponsors display as pixel art on canvases (or theme packs!)
 
-**TODO**
-- Reformat backend to py for twscrape? 
-
-
-########
+**ENV SETUP**
 1. Run `python3.11 -m venv .venv` 
    1. `python3.11` is the desired python version
    2. `-m` says run python script called venv
@@ -27,13 +23,13 @@
    2. Use whatever directory the ve is made in
 3. (One time) Create a `requirements.txt` file
    1. List all libraries inside
-   2. Run `pip install -r requirements.txt`
+   2. Run `pip install -r requirements.txt` as needed to update libraries
 
-#######
+**IMPORTANT**
 
 Remember to `delete accounts.db` and re-add the account. DO NOT LEAVE IT IN CODE
 
-#######
+**BUG FIXES**
 
 c0 Error Fix:
    1. Go to `your-env/lib/your-python-version/site-packages/twscrape/login.py`
