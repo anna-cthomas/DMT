@@ -30,9 +30,22 @@ async def test():
     await api.pool.login_all()
 
     # Testing search & scrape to see if logged in accounts are working
-    test_return = str(await twscrape.gather(api.search("elon musk", limit=20)))
+    # test_search_default = str(await twscrape.gather(api.search("elon musk", limit=20)))
 
-    return test_return
+    # tweet info
+    # For testing:
+    # A tweet with no replies (mitsuri art, replies are disabled)
+    # tweet_id = 1838261747624612135
+    # A tweet with replies (weed pikachu)
+    tweet_id = 1838560744738095403
+
+    # test_tweet_retrieval = await api.tweet_details(tweet_id)  # Works
+    # test_tweet_retweets = await twscrape.gather(api.retweeters(tweet_id, limit=20)) # Works
+
+    # Note: this method have small pagination from X side, like 5 tweets per query
+    # test_tweet_replies = await twscrape.gather(api.tweet_replies(tweet_id, limit=20))  # Works
+
+    return str(tweet_id)
 
 
 app.run(host="0.0.0.0", port=1024, debug=True)

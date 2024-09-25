@@ -28,3 +28,14 @@
 3. (One time) Create a `requirements.txt` file
    1. List all libraries inside
    2. Run `pip install -r requirements.txt`
+
+#######
+
+Remember to `delete accounts.db` and re-add the account. DO NOT LEAVE IT IN CODE
+
+#######
+
+c0 Error Fix:
+   1. Go to `your-env/lib/your-python-version/site-packages/twscrape/login.py`
+   2. Log into account -> inspect (dev tools) -> storage -> cookies -> get ct0 token
+   3. in `login()`, change `client.headers["x-csrf-token"] = client.cookies["ct0"]` to `client.headers["x-csrf-token"] = your-ct0-token`
